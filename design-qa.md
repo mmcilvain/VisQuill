@@ -29,6 +29,8 @@ Focused comparison centered on the first row and header. It was needed because t
 - Selected Japan in the demographic country controls and verified the profile changed to `Japan`.
 - Stepped the timeline backwards and verified the selected year changed from `2023` to `2013`.
 - Opened the `About this visual` panel and verified the panel rendered.
+- Navigated directly to all 23 gallery routes and confirmed each renders a valid visualization shell rather than the application's not-found state.
+- Confirmed all 24 local reference assets (23 thumbnails plus logo) are present and referenced by the gallery catalog.
 - Confirmed the build has no application console error. The only recorded console error is from the cloud-browser extension, not the implementation.
 
 ## Required fidelity surfaces
