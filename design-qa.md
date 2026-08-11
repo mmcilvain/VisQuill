@@ -31,6 +31,7 @@ Focused comparison centered on the first row and header. It was needed because t
 - Opened the `About this visual` panel and verified the panel rendered.
 - Navigated directly to all 23 gallery routes and confirmed each renders a valid visualization shell rather than the application's not-found state.
 - Confirmed all 24 local reference assets (23 thumbnails plus logo) are present and referenced by the gallery catalog.
+- Verified the reusable exploration controls on a non-demographic route: zoom, reset, and time-period controls render; the time period advanced from `5` to `6`; no application console error was recorded.
 - Confirmed the build has no application console error. The only recorded console error is from the cloud-browser extension, not the implementation.
 
 ## Required fidelity surfaces
@@ -95,6 +96,7 @@ Fix: run the existing responsive test matrix in a browser surface that permits `
 - [x] Implement responsive header/grid rules and mobile visual handoff.
 - [x] Create a reusable SVG visualization architecture.
 - [x] Implement one real interactive visualization.
+- [x] Replace the remaining gallery templates with reusable interactive SVG exploration modules.
 - [x] Validate build, navigation, country selection, timeline, and panel behavior.
 - [ ] Capture and compare tablet and mobile in an emulatable browser.
 - [x] Reuse authorized thumbnail and logo assets locally.
