@@ -59,7 +59,7 @@ Fix: obtain explicit asset permission or create independently licensed thumbnail
 
 **[P2] Header mark differs from the original VisQuill logo.**
 
-Location: `public/assets/quill-mark.png`.
+Location: `public/assets/quill-mark-compact.png`.
 
 Evidence: the reference uses its own quill logo; the implementation uses a newly generated, independent feather mark.
 
