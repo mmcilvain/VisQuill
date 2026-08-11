@@ -32,7 +32,7 @@ export function Header({ currentPath, onNavigate }: HeaderProps) {
 
   return <header className="topbar">
     <button className="brand" type="button" onClick={() => navigate('/gallery')} aria-label="Return to the gallery">
-      <img src="/assets/quill-mark-compact.png" alt="" className="brand-mark" />
+      <img src="/assets/reference/quill-gray.png" alt="" className="brand-mark" />
       <span className="brand-label">VisQuill</span>
     </button>
     <nav className="desktop-menu" aria-label="Primary">
@@ -46,7 +46,7 @@ export function Header({ currentPath, onNavigate }: HeaderProps) {
     <button type="button" className="burger" onClick={() => setMenuOpen(true)} aria-label="Open menu"><span /><span /><span /></button>
     {menuOpen && <div className="mobile-menu" role="dialog" aria-modal="true" aria-label="Site navigation">
       <button type="button" className="close-btn" onClick={() => setMenuOpen(false)} aria-label="Close menu">×</button>
-      <img src="/assets/quill-mark-compact.png" alt="" className="mobile-menu__mark" />
+      <img src="/assets/reference/quill-gray.png" alt="" className="mobile-menu__mark" />
       <nav className="mobile-menu-list" aria-label="Mobile primary navigation">
         {links.map((link) => <div className="mobile-link-group" key={link.label}>
           <button className="mobile-link" type="button" onClick={() => navigate(link.path)}>{link.label}</button>

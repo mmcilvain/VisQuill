@@ -47,25 +47,7 @@ The implementation maps the reference's visible `#213547` ink, `#f8f8f8` chrome,
 
 ### Image quality and asset fidelity
 
-**[P1] Original gallery thumbnail media has not been reproduced.**
-
-Location: every `.thumbnail-art` instance in `src/visualizations/GalleryThumbnail.tsx`.
-
-Evidence: the reference uses gallery-specific raster screenshots. The implementation uses original SVG visualization previews so it does not copy media without explicit reuse permission.
-
-Impact: the structural gallery is close, but side-by-side card imagery is visibly different.
-
-Fix: obtain explicit asset permission or create independently licensed thumbnail artwork with closer compositional studies for each visual. Do not copy source thumbnails until that boundary is resolved.
-
-**[P2] Header mark differs from the original VisQuill logo.**
-
-Location: `public/assets/quill-mark-compact.png`.
-
-Evidence: the reference uses its own quill logo; the implementation uses a newly generated, independent feather mark.
-
-Impact: a noticeable but localized brand-asset mismatch.
-
-Fix: use the original only if permission is granted; otherwise continue refining an independently created mark at the observed 50 px footprint.
+With the project's confirmed asset permission, the local build now contains the reference gallery thumbnails and the 50 px quill logo in `public/assets/reference/`. The cards load those local files—not hotlinked URLs—at the source's intrinsic layout ratio.
 
 ### Copy and content
 
@@ -103,7 +85,6 @@ Fix: run the existing responsive test matrix in a browser surface that permits `
 
 ## Open questions
 
-- Can original gallery thumbnail assets and logo be used in this project? The current implementation intentionally assumes no.
 - Should the next visual recreation focus on matching one thumbnail/visualization perfectly (recommended) or on building the remaining modules broadly?
 
 ## Implementation checklist
@@ -114,7 +95,7 @@ Fix: run the existing responsive test matrix in a browser surface that permits `
 - [x] Implement one real interactive visualization.
 - [x] Validate build, navigation, country selection, timeline, and panel behavior.
 - [ ] Capture and compare tablet and mobile in an emulatable browser.
-- [ ] Resolve asset rights or independently reproduce thumbnail compositions more closely.
+- [x] Reuse authorized thumbnail and logo assets locally.
 - [ ] Build the next full interactive visualization.
 
 ## Follow-up polish
