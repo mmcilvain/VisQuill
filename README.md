@@ -1,6 +1,6 @@
 # VisQuill Gallery Recreation
 
-An independent, high-fidelity recreation of the [VisQuill Gallery](https://visquill.com/gallery) experience, built as a Vite + TypeScript + React application. It is for learning and visual-implementation practice; it does not include VisQuill's proprietary source, compiled assets, or original gallery media.
+A high-fidelity recreation of the [VisQuill Gallery](https://visquill.com/gallery) experience, built as a Vite + TypeScript + React application. It does not include VisQuill's proprietary source code or compiled application assets. The project has permission to bundle the reference gallery thumbnails and quill logo locally for visual parity.
 
 > **The goal is reconstruction, not reinterpretation. When implementation choices conflict with visual fidelity, favor fidelity unless doing so creates a significant technical, accessibility, security, or licensing problem.**
 
@@ -40,8 +40,6 @@ Implemented for this milestone:
 
 Known differences:
 
-- Gallery illustrations are independently rendered original SVG visualizations rather than copied thumbnail images.
-- The header quill is a newly generated original mark rather than VisQuill's original logo asset.
 - The full third-party MapLibre/WebGL demographic map is intentionally not embedded. The corresponding SVG visualization is independent and interaction-complete for the first milestone.
 - Mobile layout has been derived from the public responsive rules and inspected behavior; direct automated mobile viewport capture is a remaining QA gap.
 
@@ -56,4 +54,4 @@ The public VisQuill Lab repository is MIT-licensed, while the VisQuill GDK has s
 1. Continue comparison passes for desktop, tablet, and mobile.
 2. Add each original interactive visualization module one at a time.
 3. Extend each visualization page with route-specific controls and data.
-4. Close remaining thumbnail and mobile-parity gaps.
+4. Close remaining interactive-viewer and mobile-parity gaps.
